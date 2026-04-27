@@ -1,0 +1,312 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+<title>HOME </title>
+
+<style>
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    font-family: "Segoe UI", sans-serif;
+}
+
+body {
+    background: #0f172a;
+    color: white;
+}
+
+/* HEADER */
+header {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    padding: 15px 30px;
+    background: rgba(0,0,0,0.7);
+    backdrop-filter: blur(10px);
+}
+
+/* LOGO */
+.logo {
+    font-size: 24px;
+    font-weight: bold;
+    color: #38bdf8;
+    cursor: pointer;
+}
+
+/* MENU */
+.menu {
+    position: relative;
+}
+
+.menu-btn {
+    font-size: 24px;
+    cursor: pointer;
+}
+
+/* DROPDOWN */
+.dropdown {
+    position: absolute;
+    right: 0;
+    top: 40px;
+    background: #1e293b;
+    width: 220px;
+    border-radius: 10px;
+    display: none;
+    overflow: hidden;
+    box-shadow: 0 10px 20px rgba(0,0,0,0.5);
+}
+
+.dropdown a {
+    display: block;
+    padding: 12px;
+    text-decoration: none;
+    color: white;
+    transition: 0.3s;
+}
+
+.dropdown a:hover {
+    background: #38bdf8;
+    color: black;
+}
+
+.dropdown-title {
+    padding: 10px;
+    font-size: 12px;
+    color: gray;
+}
+
+/* HERO */
+.hero {
+    text-align: center;
+    padding: 40px 20px;
+}
+
+.hero h1 {
+    font-size: 40px;
+}
+
+.hero p {
+    color: #94a3b8;
+}
+
+/* GRID */
+.container {
+    padding: 30px;
+    display: grid;
+    grid-template-columns: repeat(auto-fit, minmax(180px, 1fr));
+    gap: 20px;
+}
+
+/* CARD */
+.card {
+    background: #1e293b;
+    border-radius: 15px;
+    overflow: hidden;
+    transition: 0.3s;
+    cursor: pointer;
+}
+
+.card:hover {
+    transform: translateY(-8px) scale(1.03);
+}
+
+/* IMAGE */
+.card img {
+    width: 100%;
+    height: 140px;
+    object-fit: cover;
+}
+
+/* TEXT */
+.card p {
+    padding: 10px;
+    font-weight: bold;
+}
+
+/* FOOTER */
+footer {
+    background: #020617;
+    padding: 30px;
+    text-align: center;
+}
+
+footer h2 {
+    margin-bottom: 10px;
+}
+
+.footer-links a {
+    display: inline-block;
+    margin: 5px 10px;
+    color: #94a3b8;
+    text-decoration: none;
+}
+
+.footer-links a:hover {
+    color: #38bdf8;
+}
+</style>
+
+</head>
+
+<body>
+
+<!-- HEADER -->
+<header>
+      <div class="logo" onclick="goHome()">
+    <img src="LOGO.png" alt="H.M L.T TOWER" width="160"></div>
+    <div class="menu">
+        <div class="menu-btn" onclick="toggleMenu()">⋮</div>
+
+        <div class="dropdown" id="menu">
+            <a href="#">Home</a>
+
+            <div class="dropdown-title">AREA</div>
+            <a href="NEWNDAAREA.html">NEW NDA AREA</a>
+            <a href="40 HECTOR AREA .html">40 HECTOR AREA</a>
+            <a href="34 HECTOR AREA .html">34 HECTOR AREA</a>
+            <a href="7TH BARTH AREA .html">7TH BARTH AREA</a>
+            <a href="6TH BARTH AREA .html">6TH BARTH AREA</a>
+            <a href="West gate 1 AREA .html">WEST GATE 1 AREA</a>
+            <a href="25 HECTOR AREA.html">25 HECTOR AREA</a>
+            <a href="West gate 2 AREA .html">WEST GATE 2 AREA</a>
+            <a href="content://com.coloros.filemanager.fileprovider/root/storage/emulated/0/H.M%20L.T%20TOWER%20HUB/NORTH%20GATE%20AREA%20.html">NORTH GATE AREA</a>
+            <a href="CARGO JETTY AREA .html">CARGO JETTY AREA</a>
+            <a href="OLD NDA AREA .html">OLD NDA AREA</a>
+            <a href="TS-4 AREA .html">TS-4 AREA</a>
+            <a href="RORO PARKING AREA .html">RORO PARKING AREA</a>
+
+            <hr>
+
+            <a href="terms.html">Terms of Use</a>
+            <a href="privacy policy.html">Privacy policy</a>
+            <a href="contact us.html">Contact Us</a>
+            <a href="about us.html">About</a>
+            <a href="help.html">Was this helpful?</a>
+        </div>
+    </div>
+</header>
+
+<!-- HERO -->
+<section class="hero">
+    <h1>H.M L.T HUB</h1>
+    <p>Explore your powerful website</p>
+</section>
+
+<!-- GRID -->
+<div class="container">
+
+    <div class="card"><img src="https://picsum.photos/200/300?1"><p>Item 1</p></div>
+    <div class="card"><img src="https://picsum.photos/200/300?2"><p>Item 2</p></div>
+    <div class="card"><img src="https://picsum.photos/200/300?3"><p>Item 3</p></div>
+    <div class="card"><img src="https://picsum.photos/200/300?4"><p>Item 4</p></div>
+    <div class="card"><img src="https://picsum.photos/200/300?5"><p>Item 5</p></div>
+    <div class="card"><img src="https://picsum.photos/200/300?6"><p>Item 6</p></div>
+    <div class="card"><img src="https://picsum.photos/200/300?7"><p>Item 7</p></div>
+    <div class="card"><img src="https://picsum.photos/200/300?8"><p>Item 8</p></div>
+    <div class="card"><img src="https://picsum.photos/200/300?9"><p>Item 9</p></div>
+    <div class="card"><img src="https://picsum.photos/200/300?10"><p>Item 10</p></div>
+
+</div>
+
+<!-- 🔥 BUTTONS (HTML ONLY ADDITION) -->
+<div style="text-align:center; padding:30px;display:flex; flex-wrap:wrap; justify-content:center;">
+    <h2>Explore Areas</h2>
+    <br>
+
+    <a href="NEWNDAAREA.html">
+       <button style="padding:12px 25px; margin:10px; border:none; border-radius:10px; background:#38bdf8; cursor:pointer;">    
+           NEW NDA AREA
+        </button>
+    </a>
+
+    <a href="40 HECTOR AREA .html">
+        <button style="padding:12px 25px; margin:10px; border:none; border-radius:10px; background:#38bdf8; cursor:pointer;">
+            40 HECTOR AREA
+        </button>
+    </a>
+    <a href="34 HECTOR AREA .html">
+        <button style="padding:12px 25px; margin:10px; border:none; border-radius:10px; background:#38bdf8; cursor:pointer;">
+            34 HECTOR AREA
+        </button>
+    </a>
+    <a href="7TH BARTH AREA .html">
+        <button style="padding:12px 25px; margin:10px; border:none; border-radius:10px; background:#38bdf8; cursor:pointer;">
+            7TH BARTH AREA
+        </button>
+    </a>
+    <a href="6TH BARTH AREA .html">
+        <button style="padding:12px 25px; margin:10px; border:none; border-radius:10px; background:#38bdf8; cursor:pointer;">
+            6TH BARTH AREA
+        </button>
+    </a><a href="West gate 1 AREA .html">
+        <button style="padding:12px 25px; margin:10px; border:none; border-radius:10px; background:#38bdf8; cursor:pointer;">
+            WEST GATE 1 AREA
+        </button>
+    </a>
+    <a href="25 HECTOR AREA.html">
+        <button style="padding:12px 25px; margin:10px; border:none; border-radius:10px; background:#38bdf8; cursor:pointer;">
+            25 HECTOR AREA
+        </button>
+    </a>
+    <a href="West gate 2 AREA .html">
+        <button style="padding:12px 25px; margin:10px; border:none; border-radius:10px; background:#38bdf8; cursor:pointer;">
+            WEST GATE 2 AREA
+        </button>
+    </a>
+    <a href="NORTH GATE AREA .html">
+        <button style="padding:12px 25px; margin:10px; border:none; border-radius:10px; background:#38bdf8; cursor:pointer;">
+            NORTH GATE AREA
+        </button>
+    </a>
+    <a href="CARGO JETTY AREA .html">
+        <button style="padding:12px 25px; margin:10px; border:none; border-radius:10px; background:#38bdf8; cursor:pointer;">
+            CARGO JETTY AREA
+        </button>
+    </a>
+    <a href="Phone storage/OLD NDA AREA.html">
+        <button style="padding:12px 25px; margin:10px; border:none; border-radius:10px; background:#38bdf8; cursor:pointer;">
+            OLD NDA AREA
+        </button>
+    </a>
+    <a href="TS-4 AREA .html">
+        <button style="padding:12px 25px; margin:10px; border:none; border-radius:10px; background:#38bdf8; cursor:pointer;">
+            TS-4 AREA
+        </button>
+    </a>
+    <a href="RORO PARKING AREA .html">
+        <button style="padding:12px 25px; margin:10px; border:none; border-radius:10px; background:#38bdf8; cursor:pointer;">
+            RORO PARKING AREA
+        </button>
+    </a>
+</div>
+
+<!-- FOOTER -->
+<footer>
+        <div class="logo" onclick="goHome()">
+    <img src="LOGO.png" alt="H.M L.T HUB" width="160"></div>
+
+    <div class="footer-links">
+        <a href="terms.html">Terms of Use</a>
+        <a href="privacy policy.html">Privacy</a>
+        <a href="contact us.html">Contact Us</a>
+        <a href="about us.html">About</a>
+        <a href="help.html">Was this helpful?</a>
+    </div>
+</footer>
+
+<script>
+function toggleMenu(){
+    let menu = document.getElementById("menu");
+    menu.style.display = (menu.style.display === "block") ? "none" : "block";
+}
+
+function goHome(){
+    location.reload();
+}
+</script>
+
+</body>
+</html>
